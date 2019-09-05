@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--Spring boot父依赖-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <!-- 基本信息配置 -->
+    <groupId>com.hx.tmall</groupId>
+    <artifactId>tmall-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>tmall-parent</name>
+    <packaging>pom</packaging>
+    <!-- 模块管理 -->
+    <modules>
+        <module>tmall-entity</module>
+        <module>tmall-dao</module>
+        <module>tmall-service</module>
+        <module>tmall-web</module>
+    </modules>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <mybatis.version>1.3.2</mybatis.version>
+    </properties>
+
+   <dependencyManagement>
+       <dependencies>
+           <dependency>
+               <groupId>com.hx.tmall</groupId>
+               <artifactId>tmall-entity</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+           </dependency>
+
+           <dependency>
+               <groupId>com.hx.tmall</groupId>
+               <artifactId>tmall-dao</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+           </dependency>
+
+           <dependency>
+               <groupId>com.hx.tmall</groupId>
+               <artifactId>tmall-service</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+           </dependency>
+
+           <dependency>
+               <groupId>com.hx.tmall</groupId>
+               <artifactId>tmall-web</artifactId>
+               <version>0.0.1-SNAPSHOT</version>
+           </dependency>
+
+           <dependency>
+               <groupId>org.mybatis.spring.boot</groupId>
+               <artifactId>mybatis-spring-boot-starter</artifactId>
+               <version>${mybatis.version}</version>
+           </dependency>
+       </dependencies>
+   </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
