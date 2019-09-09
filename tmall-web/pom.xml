@@ -8,11 +8,11 @@
         <artifactId>tmall-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-        <groupId>com.hx.tmall</groupId>
-        <artifactId>tmall-web</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-        <packaging>jar</packaging>
-        <name>tmall-web</name>
+    <groupId>com.hx.tmall</groupId>
+    <artifactId>tmall-web</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>tmall-web</name>
 
     <properties>
         <java.version>1.8</java.version>
@@ -36,10 +36,10 @@
             <groupId>com.hx.tmall</groupId>
             <artifactId>tmall-util</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>net.dreamlu</groupId>
             <artifactId>spring-boot-starter-weixin</artifactId>
-        </dependency>
+        </dependency>-->
     </dependencies>
 
 </project>

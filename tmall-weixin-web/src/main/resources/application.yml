@@ -1,0 +1,14 @@
+server:
+  port: 8089
+logging:
+  level:
+    org.springframework.web: INFO
+    com.hx.tmall.wx: DEBUG
+    me.chanjar.weixin: DEBUG
+wx:
+  mp:
+    configs: # 下面可以配置多个微信公众号
+      - appId: wxb347ba7a5f0961e4
+        secret: 297a538ba6aa050003a589083d958acb
+        token: jky1988
+        aesKey:

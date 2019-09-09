@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tmall-service" />
+        <module name="tmall-entity" />
+        <module name="tmall-weixin-web" />
         <module name="tmall-dao" />
         <module name="tmall-web" />
-        <module name="tmall-entity" />
         <module name="tmall-util" />
+        <module name="tmall-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="tmall-service" target="1.8" />
       <module name="tmall-util" target="1.8" />
       <module name="tmall-web" target="1.8" />
+      <module name="tmall-weixin-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -31,6 +33,7 @@
       <module name="tmall-service" options="-parameters" />
       <module name="tmall-util" options="-parameters" />
       <module name="tmall-web" options="-parameters" />
+      <module name="tmall-weixin-web" options="-parameters" />
     </option>
   </component>
 </project>

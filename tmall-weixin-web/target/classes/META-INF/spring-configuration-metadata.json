@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "wx.mp",
+      "type": "com.hx.tmall.wx.config.WxMpProperties",
+      "sourceType": "com.hx.tmall.wx.config.WxMpProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "wx.mp.configs",
+      "type": "java.util.List<com.hx.tmall.wx.config.WxMpProperties$MpConfig>",
+      "sourceType": "com.hx.tmall.wx.config.WxMpProperties"
+    }
+  ],
+  "hints": []
+}

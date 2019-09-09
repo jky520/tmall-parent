@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/tmall-service/pom.xml" />
         <option value="$PROJECT_DIR$/tmall-web/pom.xml" />
         <option value="$PROJECT_DIR$/tmall-util/pom.xml" />
+        <option value="$PROJECT_DIR$/tmall-weixin-web/pom.xml" />
       </list>
     </option>
   </component>
