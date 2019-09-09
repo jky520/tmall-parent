@@ -36,6 +36,10 @@
             <groupId>com.hx.tmall</groupId>
             <artifactId>tmall-util</artifactId>
         </dependency>
+        <dependency>
+            <groupId>net.dreamlu</groupId>
+            <artifactId>spring-boot-starter-weixin</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

@@ -1,0 +1,30 @@
+server:
+  port: 8089
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_qxmanager?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: 123456
+  devtools:
+    livereload:
+      enabled: true
+mybatis:
+  mapper-locations: classpath:mappings/*.xml
+  type-aliases-package: com.hx.tmall.entity
+# 微信配置信息
+dream:
+  weixin:
+    url-patterns: /weixin/**
+    dev-mode: true
+    # 公众号的配置
+    wx-configs:
+      - appId: wxb347ba7a5f0961e4
+        appSecret: 297a538ba6aa050003a589083d958acb
+        token: jky1988
+    # 小程序的配置
+    wxa-config:
+      app-id: wxb347ba7a5f0961e4
+      app-secret: 297a538ba6aa050003a589083d958acb
+    json-type: jackson

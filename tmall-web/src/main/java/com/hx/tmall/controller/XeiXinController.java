@@ -10,10 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class XeiXinController {
-
+    // 验签方法
     @GetMapping("/wx/init")
     public String init(String signature, String timestamp,String nonce, String echostr) {
-        if (!CheckUtil.checkSignature(signature, timestamp, nonce)) {
+        boolean checkSignature = CheckUtil.checkSignature(signature, timestamp, nonce);
+        if (!checkSignature) {
             return null;
         }
         return echostr;
