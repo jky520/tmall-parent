@@ -8,18 +8,13 @@
         <artifactId>tmall-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <!--基本信息-->
     <groupId>com.hx.tmall</groupId>
-    <artifactId>tmall-entity</artifactId>
+    <artifactId>tmall-util</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>tmall-entity</name>
+    <name>tmall-util</name>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-    </dependencies>
 
+    </dependencies>
 </project>

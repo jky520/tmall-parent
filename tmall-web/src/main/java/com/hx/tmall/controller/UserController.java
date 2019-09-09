@@ -18,6 +18,8 @@ public class UserController {
 
     @GetMapping("/{id}")
     public User show(@PathVariable int id) {
-        return userService.load(id);
+        User user = userService.load(id);
+        System.out.println(user.getUsername());
+        return user;
     }
 }
