@@ -1,5 +1,6 @@
 package com.hx.tmall.wx.controller;
 
+import com.hx.tmall.wx.config.WxConfigProperties;
 import lombok.extern.slf4j.Slf4j;
 import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.mp.api.WxMpService;
@@ -26,9 +27,13 @@ public class WechatController {
     @Autowired
     private WxMpService wxMpService;
 
+    @Autowired
+    private WxConfigProperties wxConfigProperties;
+
     @GetMapping("/authorizeBase")
     public String authorizeBase(@RequestParam("returnUrl") String returnUrl){
-        String url = "http://jky.free.idcfengye.com/wechat/getOpenId";
+        String url = wxConfigProperties.getWechatMpAuthorize()+"/wechat/getOpenId";
+        System.out.println(WxConsts.OAuth2Scope.SNSAPI_BASE);
         String redirectURL = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_BASE, URLEncoder.encode(returnUrl));
         log.info("【微信网页授权】获取code,redirectURL={}", redirectURL);
         return "redirect:" + redirectURL;
@@ -36,7 +41,7 @@ public class WechatController {
 
     @GetMapping("/authorizeUserInfo")
     public String authorizeUserInfo(@RequestParam("returnUrl") String returnUrl){
-        String url = "http://jky.free.idcfengye.com/wechat/getCode";
+        String url = wxConfigProperties.getWechatMpAuthorize()+"/wechat/getCode";
         String redirectURL = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAuth2Scope.SNSAPI_USERINFO, URLEncoder.encode(returnUrl));
         log.info("【微信网页授权】获取code,redirectURL={}", redirectURL);
         return "redirect:" + redirectURL;
@@ -68,7 +73,9 @@ public class WechatController {
     @GetMapping("/getUserInfo")
     @ResponseBody
     public WxMpUser getUserInfo(@RequestParam("openId") String openId) throws Exception {
+
         WxMpUser wxMpUser = wxMpService.getUserService().userInfo(openId);
+
         return wxMpUser;
     }
 }

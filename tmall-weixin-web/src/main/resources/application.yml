@@ -7,12 +7,15 @@ logging:
     me.chanjar.weixin: DEBUG
 wx:
   mp:
-    configs: # ����������ö��΢�Ź��ں�
-      - appId: wxb347ba7a5f0961e4
-        secret: 297a538ba6aa050003a589083d958acb
-        token: jky1988
-        aesKey:
+    configs: # 下面可以配置多个微信公众号
       - appId: wxa4522b09744396d0
         secret: de79328394a5130168f0436710317db6
         token: hmall
         aesKey:
+#      - appId: wxb347ba7a5f0961e4
+#        secret: 297a538ba6aa050003a589083d958acb
+#        token: jky1988
+#        aesKey:
+
+mywx:
+  wechatMpAuthorize: http://jky.free.idcfengye.com

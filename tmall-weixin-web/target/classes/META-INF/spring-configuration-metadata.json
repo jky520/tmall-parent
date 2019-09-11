@@ -1,12 +1,22 @@
 {
   "groups": [
     {
+      "name": "mywx",
+      "type": "com.hx.tmall.wx.config.WxConfigProperties",
+      "sourceType": "com.hx.tmall.wx.config.WxConfigProperties"
+    },
+    {
       "name": "wx.mp",
       "type": "com.hx.tmall.wx.config.WxMpProperties",
       "sourceType": "com.hx.tmall.wx.config.WxMpProperties"
     }
   ],
   "properties": [
+    {
+      "name": "mywx.wechat-mp-authorize",
+      "type": "java.lang.String",
+      "sourceType": "com.hx.tmall.wx.config.WxConfigProperties"
+    },
     {
       "name": "wx.mp.configs",
       "type": "java.util.List<com.hx.tmall.wx.config.WxMpProperties$MpConfig>",
