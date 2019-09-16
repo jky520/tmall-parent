@@ -10,20 +10,31 @@ spring:
   devtools:
     livereload:
       enabled: true
+# dubboçš„é…ç½®
+dubbo:
+  application:
+    name: user-service-consumer
+  registry:
+    address: zookeeper://118.25.197.111:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  monitor:
+    protocol: register
 mybatis:
   mapper-locations: classpath:mappings/*.xml
   type-aliases-package: com.hx.tmall.entity
-# Î¢ĞÅÅäÖÃĞÅÏ¢
+# Î¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 dream:
   weixin:
     url-patterns: /weixin/**
     dev-mode: true
-    # ¹«ÖÚºÅµÄÅäÖÃ
+    # ï¿½ï¿½ï¿½ÚºÅµï¿½ï¿½ï¿½ï¿½ï¿½
     wx-configs:
       - appId: wxb347ba7a5f0961e4
         appSecret: 297a538ba6aa050003a589083d958acb
         token: jky1988
-    # Ğ¡³ÌĞòµÄÅäÖÃ
+    # Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     wxa-config:
       app-id: wxb347ba7a5f0961e4
       app-secret: 297a538ba6aa050003a589083d958acb

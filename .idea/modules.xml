@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/tmall-entity/tmall-entity.iml" filepath="$PROJECT_DIR$/tmall-entity/tmall-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmall-parent.iml" filepath="$PROJECT_DIR$/tmall-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmall-service/tmall-service.iml" filepath="$PROJECT_DIR$/tmall-service/tmall-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tmall-user-service/tmall-user-service.iml" filepath="$PROJECT_DIR$/tmall-user-service/tmall-user-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmall-util/tmall-util.iml" filepath="$PROJECT_DIR$/tmall-util/tmall-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmall-web/tmall-web.iml" filepath="$PROJECT_DIR$/tmall-web/tmall-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/tmall-weixin-web/tmall-weixin-web.iml" filepath="$PROJECT_DIR$/tmall-weixin-web/tmall-weixin-web.iml" />

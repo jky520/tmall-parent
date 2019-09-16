@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tmall-entity" />
-        <module name="tmall-weixin-web" />
         <module name="tmall-dao" />
-        <module name="tmall-web" />
-        <module name="tmall-util" />
+        <module name="tmall-entity" />
         <module name="tmall-service" />
+        <module name="tmall-user-service" />
+        <module name="tmall-util" />
+        <module name="tmall-web" />
+        <module name="tmall-weixin-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="tmall-entity" target="1.8" />
       <module name="tmall-parent" target="1.8" />
       <module name="tmall-service" target="1.8" />
+      <module name="tmall-user-service" target="1.8" />
       <module name="tmall-util" target="1.8" />
       <module name="tmall-web" target="1.8" />
       <module name="tmall-weixin-web" target="1.8" />
@@ -31,6 +33,7 @@
       <module name="tmall-dao" options="-parameters" />
       <module name="tmall-entity" options="-parameters" />
       <module name="tmall-service" options="-parameters" />
+      <module name="tmall-user-service" options="-parameters" />
       <module name="tmall-util" options="-parameters" />
       <module name="tmall-web" options="-parameters" />
       <module name="tmall-weixin-web" options="-parameters" />

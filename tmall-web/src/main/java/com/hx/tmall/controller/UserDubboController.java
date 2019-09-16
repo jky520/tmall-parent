@@ -1,5 +1,6 @@
 package com.hx.tmall.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.hx.tmall.entity.User;
 import com.hx.tmall.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,20 +8,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.annotation.Resource;
-
 @RestController
 @RequestMapping("/user")
-public class UserController {
+public class UserDubboController {
 
-    @Resource
+    @Reference
     private UserService userService;
 
-
-    @GetMapping("/{id}")
-    public User show(@PathVariable int id) {
-        User user = userService.load(id);
-        System.out.println(user.getUsername());
-        return user;
+    @GetMapping("/getUser/{id}")
+    public User getUser(@PathVariable int id) {
+        return userService.load(id);
     }
 }
