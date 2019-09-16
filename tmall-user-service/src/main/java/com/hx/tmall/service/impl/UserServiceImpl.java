@@ -7,8 +7,8 @@ import com.hx.tmall.service.UserService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-@Service(timeout = 1200000)
-@Component
+@Service(timeout = 1200000) // 暴露服务
+@Component // spring中bean的生成
 public class UserServiceImpl implements UserService {
 
     @Resource
